@@ -50,10 +50,32 @@ function evenOddVerifier (utentNumber, pcNumber){
     console.log(sumNumbers)
 
     if ((sumNumbers % 2) === 0){
-        window.alert("Il numero è pari")
+        console.log("Il numero è pari")
     }else{
-        window.alert("Il numero è dispari")
+        console.log("Il numero è dispari")
+    }
+
+    if((sumNumbers % 2) === 0) {
+
+        if((utentNumber % 2) === 0){
+            console.log('Utente Vince!')
+
+        }else{   
+            console.log('Utente perde!')
+        }
+
+    }else if((sumNumbers % 2) === 1){
+
+        if((utentNumber % 2) === 1){
+            console.log('Utente Vince!')
+
+        }else{   
+            console.log('Utente perde!')
+        }
     }
 }
 
+
+
 evenOddVerifier (numberUtent,randomNumber)
+
