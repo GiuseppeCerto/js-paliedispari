@@ -4,20 +4,27 @@
 
 const nameEnteredByUser = prompt('Inserisci un nome')
 
+const nameUserSplitted = nameEnteredByUser.split()
+
 console.log(nameEnteredByUser)
 
-let reverseName = []
+function plindromControl (userName){
 
-for (let i = (nameEnteredByUser.length - 1); i > - 1; i--){
+    let reverseName = []
 
-    reverseName.push(nameEnteredByUser[i])
+    for (let i = (nameEnteredByUser.length - 1); i > - 1; i--){
 
+        reverseName.push(userName[i])
+
+    }
+
+    console.log(reverseName)
+
+    if(userName === reverseName){
+        window.alert("Il nome è palindromo")
+    }else{
+        window.alert("Il nome non è palindromo")
+    }
 }
 
-console.log(reverseName)
-
-if(nameEnteredByUser === reverseName){
-    window.alert("Il nome è palindromo")
-}else{
-    window.alert("Il nome non è palindromo")
-}
+plindromControl (nameEnteredByUser)
