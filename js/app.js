@@ -75,7 +75,5 @@ function evenOddVerifier (utentNumber, pcNumber){
     }
 }
 
-
-
 evenOddVerifier (numberUtent,randomNumber)
 
