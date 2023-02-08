@@ -29,15 +29,12 @@
 
 /***** PARI O DISPARI *****/ 
 
-const numberUtent = prompt('Inserisci un numero da 1 a 5')
+let numberUtent = parseInt(prompt('Inserisci un numero da 1 a 5'))
 
 while (numberUtent >= 6 || numberUtent <= 0){
 
-    numberUtent = prompt('Inserisci un numero da 1 a 5')
-} 
-
-let intNumberUtent = parseInt(numberUtent)
-
+    numberUtent = parseInt(prompt('Inserisci un numero da 1 a 5'))
+}
 console.log(numberUtent)
 
 let randomNumber 
@@ -59,8 +56,4 @@ function evenOddVerifier (utentNumber, pcNumber){
     }
 }
 
-evenOddVerifier (intNumberUtent,randomNumber)
-
-
-
-
+evenOddVerifier (numberUtent,randomNumber)
