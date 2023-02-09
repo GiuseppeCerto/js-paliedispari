@@ -2,29 +2,29 @@
 
 /CHIEDERE ALL UTENTE UN NOME CON PROMPT/ 
 
-// const nameEnteredByUser = prompt('Inserisci un nome')
+const nameEnteredByUser = prompt('Inserisci un nome')
 
-// const lowerNameUser = nameEnteredByUser.toLowerCase ('')
+const lowerNameUser = nameEnteredByUser.toLowerCase ('')
 
-// function plindromControl (userName){
+function plindromControl (userName){
 
-//     let reverseName = ''
+    let reverseName = ''
 
-//     for (let i = (userName.length - 1); i > - 1; i--){
+    for (let i = (userName.length - 1); i > - 1; i--){
 
-//         reverseName = reverseName + userName[i]
-//     }
+        reverseName = reverseName + userName[i]
+    }
 
-//     console.log(reverseName)
+    console.log(reverseName)
 
-//     if(userName === reverseName){
-//         window.alert("Il nome è palindromo")
-//     }else{
-//         window.alert("Il nome non è palindromo")
-//     }
-// }
+    if(userName === reverseName){
+        window.alert("Il nome è palindromo")
+    }else{
+        window.alert("Il nome non è palindromo")
+    }
+}
 
-// plindromControl (lowerNameUser)
+plindromControl (lowerNameUser)
 
 
 /***** PARI O DISPARI *****/ 
